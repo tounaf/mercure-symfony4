@@ -20,6 +20,9 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class ArticleController extends AbstractController
 {
+    /**
+     * @return Response
+     */
     public function index()
     {
         $em = $this->getDoctrine()->getManager();
@@ -28,6 +31,16 @@ class ArticleController extends AbstractController
         $entity->setDescription("Description article");
         $em->persist($entity);
         $em->flush();
+        $me = "tounaf";
+        return new Response('<body>Hello world,creatd by '.$me.'</body>');
+    }
+
+    /**
+     * @return Response
+     */
+    public function home()
+    {
+
         $me = "tounaf";
         return new Response('<body>Hello world,creatd by '.$me.'</body>');
     }

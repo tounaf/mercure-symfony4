@@ -1,3 +1,8 @@
 index_article:
-    path: /
+    path: /article/new
     controller: App\Acme\TestBundle\Controller\ArticleController::index
+
+home_article:
+    path: /home
+    controller: App\Acme\TestBundle\Controller\ArticleController::home
+
