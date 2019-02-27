@@ -1,0 +1,3 @@
+index_article:
+    path: /
+    controller: App\Acme\TestBundle\Controller\ArticleController::index
