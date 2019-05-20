@@ -6,3 +6,8 @@ home_article:
     path: /home
     controller: App\Acme\TestBundle\Controller\ArticleController::home
 
+home_books:
+    path: /books
+    controller: App\Acme\TestBundle\Controller\ArticleController::showBook
+    methods: [GET, POST]
+

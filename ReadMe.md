@@ -10,5 +10,5 @@
     -$ cd symfonytou
     - installation de dependances : $ composer install
     -$php bin/console server:run
-    - ouvrir navigateur : localhost:8000/home  
+    - ouvrir navigateur : localhost:8000/home   
       
